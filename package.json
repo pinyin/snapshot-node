@@ -18,7 +18,10 @@
     "url": "git+https://github.com/pinyin/snapshot-node.git"
   },
   "keywords": [
-    "snapshot-node"
+    "snapshot-node",
+    "styles",
+    "css",
+    "dom"
   ],
   "author": "Bo Bao <bob432091@gmail.com> (https://github.com/pinyin)",
   "license": "MIT",
