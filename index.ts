@@ -1,0 +1,1 @@
+export {snapshotNode} from './src/snapshotNode'

@@ -1,0 +1,66 @@
+{
+  "name": "snapshot-node",
+  "version": "0.0.1",
+  "description": "TSLint rules",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "rm -rf dist && npx tsc",
+    "test": "npx tsc && npx snapshot-node --test tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinyin/snapshot-node.git"
+  },
+  "keywords": [
+    "snapshot-node"
+  ],
+  "author": "Bo Bao <bob432091@gmail.com> (https://github.com/pinyin)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinyin/snapshot-node/issues"
+  },
+  "homepage": "https://github.com/pinyin/snapshot-node#readme",
+  "devDependencies": {
+    "@types/jest": "^23.1.5",
+    "jest": "^23.4.0",
+    "ts-jest": "^22.0.0",
+    "typescript": "^2.9.2"
+  },
+  "peerDependencies": {
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "@pinyin/maybe": "0.0.9",
+    "@types/node": "^10.5.2",
+    "tslib": "^1.9.3"
+  },
+  "jest": {
+    "roots": [
+      "src"
+    ],
+    "transform": {
+      "^.+\\.(t|j)sx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "verbose": true,
+    "globals": {
+      "ts-jest": {
+        "enableTsDiagnostics": true
+      }
+    }
+  }
+}
