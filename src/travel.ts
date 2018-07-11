@@ -8,7 +8,7 @@ export function* travel(ancestor: StyledElement): IterableIterator<StyledElement
             acceptNode: node =>
                 isStyledElement(node) ?
                     NodeFilter.FILTER_ACCEPT :
-                    NodeFilter.FILTER_REJECT, // FIXME
+                    NodeFilter.FILTER_SKIP
         },
     )
     yield ancestor
