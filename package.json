@@ -1,7 +1,7 @@
 {
   "name": "snapshot-node",
   "version": "0.0.1",
-  "description": "TSLint rules",
+  "description": "Clone a HTML node & apply computed styles recursively to the cloned node.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
